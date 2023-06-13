@@ -8,7 +8,7 @@ public class Main {
         System.out.print("enter the anount you want between $1000 to $1,00000:");
 
         int principal=sc.nextInt();
-        if(principal<1000 || principal>100000){
+        if(principal<1000 || principal>1000000){
             System.out.println("enter valid value");
             }
         else{
@@ -28,7 +28,7 @@ public class Main {
             continue;
         }
         float monthly_interest= interest/100/12;
-        System.out.println("enter the duration");
+        System.out.print("enter the duration");
         int years=sc.nextInt();
         long total_payment=years*12;
         double k=Math.pow(1+monthly_interest,years);
