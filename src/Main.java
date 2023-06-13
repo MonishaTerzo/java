@@ -1,15 +1,11 @@
 import java.text.NumberFormat;
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-            NumberFormat a= NumberFormat.getCurrencyInstance();
-            String g=a.format(768756764);
-        System.out.println(g);
-        NumberFormat h= NumberFormat.getPercentInstance();
-        String ii=h.format(1.0);
-        System.out.println(ii);
-
-
-
+        Scanner sc=new Scanner(System.in);
+        int mark=0;
+        while(mark!=100){
+            mark=sc.nextInt();
+            System.out.println("need improvement");}
     }
     }
