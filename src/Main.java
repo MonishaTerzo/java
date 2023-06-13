@@ -5,10 +5,8 @@ public class Main {
         {
                 Scanner sc = new Scanner(System.in);
                 System.out.print("Enter the number: ");
-                int n = sc.nextInt();
-                System.out.println("fizz or Buzz, 0r FizzBuzz are: ");
-                for (int i = 1; i <= n; i++)
-                {
+                int i = sc.nextInt();
+
                     if (i%3==0 && i%5==0)
                     {
 
@@ -17,12 +15,12 @@ public class Main {
 
                     else if (i%3==0)
                     {
-                        System.out.println(i+ " - Fizz");
+                        System.out.println(i+ " - buzz");
                     }
 
                     else if (i%5==0)
                     {
-                        System.out.println(i + "- Buzz");
+                        System.out.println(i + "- fizz");
                     }
                     else
                     {
@@ -30,7 +28,7 @@ public class Main {
                     }
 
             }
-        }}}
+        }}
 
 
 
