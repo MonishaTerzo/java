@@ -15,9 +15,19 @@ public class Main {
             break;}
         continue;
         }
-        System.out.println("enter the interest rate:") ;
-        float interest=sc.nextFloat();
-        float monthly_interest=interest/100/12;
+        float interest =0;
+        while(an){
+            System.out.print("enter the interest you want between 0 to 30:");
+
+            interest =sc.nextFloat();
+            if(interest<0 || interest>30){
+                System.out.println("enter valid value");
+            }
+            else{
+                break;}
+            continue;
+        }
+        float monthly_interest= interest/100/12;
         System.out.println("enter the duration");
         int years=sc.nextInt();
         long total_payment=years*12;
