@@ -1,15 +1,13 @@
 import java.text.NumberFormat;
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-            NumberFormat a= NumberFormat.getCurrencyInstance();
-            String g=a.format(768756764);
-        System.out.println(g);
-        NumberFormat h= NumberFormat.getPercentInstance();
-        String ii=h.format(1.0);
-        System.out.println(ii);
-
-
-
+        Scanner sc=new Scanner(System.in);
+        int majorityvote=sc.nextInt();
+        String m="it is a rumour";
+        boolean rumour=majorityvote>100;
+        if(rumour){
+            m="no it is not a rumour";}
+        System.out.println(m);
     }
     }
