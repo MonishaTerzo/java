@@ -2,12 +2,18 @@ import java.text.NumberFormat;
 
 public class Main {
     public static void main(String[] args) {
-            NumberFormat a= NumberFormat.getCurrencyInstance();
-            String g=a.format(768756764);
-        System.out.println(g);
-        NumberFormat h= NumberFormat.getPercentInstance();
-        String ii=h.format(1.0);
-        System.out.println(ii);
+        for(int i=0;i<7;i++){
+            System.out.print(i+" ");
+        }
+        System.out.println();
+        for(int i=4;i>=0;i--){
+            System.out.print(i+" ");}
+        System.out.println();
+        for(int i=0;i<10;i+=2){
+            System.out.print(i+" ");}
+        System.out.println();
+        for(int i=10;i>=0;i-=2){
+            System.out.print(i+" ");}
 
 
 
