@@ -3,8 +3,18 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.print("enter the anount you want:");
+        boolean an=true;
+        while(an){
+        System.out.print("enter the anount you want between $1000 to $1,00000:");
+
         int principal=sc.nextInt();
+        if(principal<1000 || principal>100000){
+            System.out.println("enter valid value");
+            }
+        else{
+            break;}
+        continue;
+        }
         System.out.println("enter the interest rate:") ;
         float interest=sc.nextFloat();
         float monthly_interest=interest/100/12;
@@ -17,7 +27,7 @@ public class Main {
         System.out.println("your final amount"+"$"+total_amount);
         NumberFormat a= NumberFormat.getCurrencyInstance();
         String g=a.format(total_amount);
-        System.out.println(g);
+        System.out.println("yoy should pay the amount"+g);
 
     }
     }
