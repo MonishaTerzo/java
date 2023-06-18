@@ -10,7 +10,7 @@ public class Main {
                     if (i%3==0 && i%5==0)
                     {
 
-                        System.out.println(i+" - FizzBuzz");
+                        System.out.println(i+" - Fizz Buzz");
                     }
 
                     else if (i%3==0)
